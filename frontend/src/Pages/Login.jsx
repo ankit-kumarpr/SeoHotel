@@ -27,7 +27,7 @@ const Login = () => {
     try {
       setLoading(true);
 
-      const url = `${Base_url}/auth/login`;
+      const url = `https://seohotel.onrender.com/seo/auth/login`;
       const headers = {
         "Content-Type": "application/json",
       };
