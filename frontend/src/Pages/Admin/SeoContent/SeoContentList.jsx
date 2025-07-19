@@ -88,7 +88,7 @@ const SeoContentList = () => {
     const GetSeoContent = async () => {
       try {
         setLoading(true);
-        const url = `${Base_url}/meta/getallseo`;
+        const url = `https://seohotel.onrender.com/seo/meta/getallseo`;
         const response = await axios.get(url);
         setSeoData(response.data.data);
       } catch (error) {
@@ -105,7 +105,7 @@ const SeoContentList = () => {
     try {
       setSitemapLoading(true);
       setSitemapError(null);
-      const url = `${Base_url}/meta/sitemap.xml`;
+      const url = `https://seohotel.onrender.com/seo/meta/sitemap.xml`;
       const response = await axios.get(url);
       setSitemapContent(response.data);
       setShowSitemap(true);
