@@ -57,7 +57,7 @@ const AddSeoContent = () => {
     try {
       setLoading(true);
 
-      const response = await axios.post(`${Base_url}/meta/add`, {
+      const response = await axios.post(`https://seohotel.onrender.com/seo/meta/add`, {
         page: data.page,
         category: data.category,
         metaTitle: data.metaTitle,
